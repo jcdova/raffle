@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shirt Raffle</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>DovaBru Merch Raffle</h1>
+      <p>
+        Buy a ticket for $5 to enter the raffle for a chance to win a shirt!
+      </p>
+      <form
+        id="raffleForm"
+        action="https://formspree.io/f/mzagyabx"
+        method="POST"
+      >
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" placeholder="Full Name" />
+        <label for="email">Your Email:</label>
+        <input
+          type="email"
+          id="email"
+          name="email"
+          placeholder="email@serviceprovider.com"
+          required
+        />
+        <label for="size">Size:</label>
+        <input
+          type="text"
+          id="size"
+          name="size"
+          placeholder="S, M, L, XL, XXL"
+          required
+        />
+        <button type="submit">Buy Ticket</button>
+      </form>
+      <p>Please send your entry fee by Zelle using my email jcdova@mail.com</p>
+      <p>
+        Once your money is recieved your name will appear under the Raffle
+        Entries below:
+      </p>
+      <div id="raffleEntries">
+        <h2>Raffle Entries</h2>
+        <ul id="entriesList"></ul>
+      </div>
+      <!-- <button id="drawWinner">Draw Winner</button>
+      <div id="winner"></div> -->
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
