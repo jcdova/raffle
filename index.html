@@ -12,7 +12,7 @@
       <p>
         Buy a ticket for $5 to enter the raffle for a chance to win a shirt!
       </p>
-      <form
+      <!-- <form
         id="raffleForm"
         action="https://formspree.io/f/mzagyabx"
         method="POST"
@@ -36,14 +36,35 @@
           required
         />
         <button type="submit">Buy Ticket</button>
+      </form> -->
+      <form id="raffleForm">
+        <div
+          class="tm-bg-white-translucent text-xs-center tm-textbox tm-2-col-textbox"
+        >
+          <p>
+            <button>
+              <a
+                href="https://docs.google.com/forms/d/e/1FAIpQLSfpO8XJPXgew7U3cMJp4DCsz5azNJnN3AUVOqHs7cKbEvAu0w/viewform"
+                target="popup"
+                onclick="window.open('https://docs.google.com/forms/d/e/1FAIpQLSfpO8XJPXgew7U3cMJp4DCsz5azNJnN3AUVOqHs7cKbEvAu0w/viewform','popup','width=600,height=600,scrollbars=yes,resizable=yes,top=50%,left=250'); return false;"
+                >sign-up here</a
+              >
+            </button>
+          </p>
+        </div>
+
+        <!-- <a
+          href="https://docs.google.com/forms/d/1z3vwzYUaLHLgAP3l29zxRRcuc0z3qd_QQGyQ5XSRHNQ/edit"
+          >sign-up</a
+        > -->
       </form>
       <p>Please send your entry fee by Zelle using my email jcdova@mail.com</p>
-      <p>
+      <!-- <p>
         Once your money is recieved your name will appear under the Raffle
         Entries below:
-      </p>
+      </p> -->
       <div id="raffleEntries">
-        <h2>Raffle Entries</h2>
+        <!-- <h2>Raffle Entries</h2> -->
         <ul id="entriesList"></ul>
       </div>
       <!-- <button id="drawWinner">Draw Winner</button>
