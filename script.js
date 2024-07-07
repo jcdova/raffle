@@ -29,3 +29,8 @@ document.addEventListener('DOMContentLoaded', () => {
     winnerDiv.textContent = `The winner is: ${winner.name} (${winner.email})`;
   });
 });
+
+// ********** set date ************
+// select span
+const date = (document.getElementById('date').innerHTML =
+  new Date().getFullYear());
