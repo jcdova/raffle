@@ -1,11 +1,15 @@
 body {
-  font-family: Arial, sans-serif;
+  /* font-family: Arial, sans-serif; */
+  font-family: 'Cuprum', sans-serif;
+  font-optical-sizing: auto;
+  font-size: large;
+  font-weight: 600;
+  font-style: normal;
   background-color: lightgrey;
-  color: #333;
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  height: 120vh;
   margin: 0;
   color: white;
 }
@@ -23,6 +27,13 @@ body {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   text-align: center;
 }
+
+/* .cuprumLogo {
+  font-family: 'Cuprum', sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+} */
 
 h1 {
   margin-bottom: 20px;
@@ -48,7 +59,7 @@ input {
 button {
   padding: 10px 20px;
   margin-top: 20px;
-  background-color: grey;
+  background-color: cyan;
   color: white;
   font-size: 20px;
 
@@ -56,9 +67,24 @@ button {
   border-radius: 4px;
   cursor: pointer;
 }
+.smallButton {
+  padding: 6px 11px;
+  margin-top: 5px;
+  background-color: purple;
+  color: white;
+  font-size: 15px;
+
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+.raffleButton a {
+  color: black;
+}
 
 a {
   text-decoration: none;
+  color: cyan;
 }
 
 button:hover {
@@ -87,15 +113,12 @@ button:hover {
   transition: var(--transition);
 }
 
-.social-icon:hover {
-  color: var(--clr-primary);
-}
 .footer-text {
   margin-top: 1.25rem;
   text-transform: uppercase;
-  color: var(--clr-white);
+  color: gray;
   font-weight: 400;
 }
 .company {
-  color: var(--clr-primary);
+  color: cyan;
 }
